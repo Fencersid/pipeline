@@ -1,0 +1,14 @@
+name: siddhesh
+
+on: 
+   push: 
+    branches: [main]
+
+jobs:
+    ang:
+     runs-on: [ubuntu-latest]
+
+     steps:
+         - name: cheking
+           run: echo "Hi i am siddhesh"
+    
