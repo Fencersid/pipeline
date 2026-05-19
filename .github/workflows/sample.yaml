@@ -1,0 +1,34 @@
+name: Hello
+
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: checkout repo
+       run: echo "app is getting built..."
+     - uses: actions/checkout@v6.0.2
+     
+     - name: Setup Java JDK
+       uses: actions/setup-java@v5.2.0
+       with:
+         java-version: 22.x
+         cache: 'npm'
+
+     - name: install dependencies
+       run: npm install
+
+     - name: build appliction packet
+       run: npm run build
+     
+
+      
+ 
+  
+  
