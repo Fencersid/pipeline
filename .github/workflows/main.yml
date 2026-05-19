@@ -11,4 +11,7 @@ jobs:
      steps:
          - name: cheking
            run: echo "Hi i am siddhesh"
+     steps:
+        - name: Planning
+          run: echo "plan the next step"
     
