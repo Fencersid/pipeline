@@ -1,0 +1,14 @@
+name: Siddhesh2
+
+on:
+  schedule: 
+   - cron: "0 0 * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: tester
+        run: echo "schedule the cron tab"
+ 
